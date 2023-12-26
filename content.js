@@ -20,7 +20,10 @@ class AudioNormalizer {
         const volumeLabel = panel.childNodes[1].childNodes[3].innerHTML;
         const volume = parseFloat(volumeLabel.split('loudness')[1].split('dB')[0]);
 
-        return Math.pow(10, -volume / 20);
+        if (volume >= 0.0)
+            return 1.0;
+        else
+            return Math.pow(10, Math.abs(volume) / 20);
     }
 
     constructor(url) {

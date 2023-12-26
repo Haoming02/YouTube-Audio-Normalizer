@@ -10,5 +10,5 @@ A simple **Chromium** extension that attempts to balance the volume of YouTube v
 5. It should now show up on the list of **Installed extensions**
 
 ## How to Use
-- When watching a video on YouTube, if you think the volume is too low or too high,
+- When watching a video on YouTube, if you think the volume is too low,
 simply right click the video, and click the **Stats for nerds** button. The volume should then be normalized.
